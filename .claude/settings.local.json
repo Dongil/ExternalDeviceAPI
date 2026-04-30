@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Program Files/Microsoft Visual Studio//**)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft Visual Studio//**)",
+      "Read(//c/Program Files \\(x86\\)/MSBuild//**)",
+      "Bash(where MSBuild.exe)",
+      "Bash(\"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" /p:Configuration=Debug /v:minimal /nologo)",
+      "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/p:Configuration=Debug\" \"/v:minimal\" \"/nologo\")",
+      "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/p:Configuration=Release\" \"/v:minimal\" \"/nologo\")",
+      "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/t:Rebuild\" \"/p:Configuration=Release\" \"/v:minimal\" \"/nologo\")",
+      "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"Xeno.Framework.Matrix/Xeno.Framework.Matrix.csproj\" \"/t:Rebuild\" \"/p:Configuration=Debug\" \"/v:minimal\" \"/nologo\")",
+      "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/t:Rebuild\" \"/p:Configuration=Debug\" \"/v:minimal\" \"/nologo\")"
+    ]
+  }
+}

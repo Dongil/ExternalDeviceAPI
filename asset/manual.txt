@@ -1,0 +1,1054 @@
+4K30 HDMITM 8x8 Seamless Matrix
+
+                          VER 1.0
+Thank you for purchasing this product
+
+For optimum performance and safety, please read these instructions carefully before connecting,
+operating or adjusting this product. Please keep this manual for future reference.
+
+Surge protection device recommended
+
+This product contains sensitive electrical components that may be damaged by electrical
+spikes, surges, electric shock, lighting strikes, etc. Use of surge protection systems is highly
+recommended in order to protect and extend the life of your equipment.
+
+Caution
+
+The product requires the use of UTP connectors. Please connect in direct interconnection
+method and do not cross connect.
+
+                                                                                                                                                       White and Orange
+                                                                                                                                                       Orange
+                                                                                                                                                       White and Green
+                                                                                                                                                       Blue
+                                                                                                                                                       White and Blue
+                                                                                                                                                       Green
+                                                                                                                                                       White and Brown
+                                                                                                                                                        Brown
+
+                                               Direct Interconnection Method
+
+Table of Contents
+
+1. Introduction..................................................................................................................... 1
+2. Features........................................................................................................................... 1
+3. Package Contents........................................................................................................ 1
+4. Specifications................................................................................................................ 2
+5. Operation Controls and Functions.............................................................................. 3
+
+     5.1 Front Panel............................................................................................................. 3
+     5.2 Rear Panel............................................................................................................... 5
+6. IR Remote...................................................................................................................... 5
+7. LCD Screen Menu Navigation.......................................................................................6
+8. EDID Management........................................................................................................ 7
+9. Web GUI User Guide..................................................................................................... 9
+     9.1 Connection.............................................................................................................9
+     9.2 Login......................................................................................................................... 9
+     9.3 Web GUI Interface Instruction..............................................................................10
+10. RS-232 Control Commands.........................................................................................15
+11. Application Example...................................................................................................21
+1. Introduction
+
+This 4K30 HDMI Seamless Matrix is a perfect solution for video transmission from 8 HDMI
+sources to 8 HDTV displays. It supports seamless switching and video wall functionality.
+8 channel inputs support video resolution up to 4K30Hz. 8 channel outputs support
+independent resolution modification, HDMI and DVI output switching, brightness and
+contrast adjustment. This matrix supports scene preset, saving, calling, deleting and polling.
+Advanced EDID management is supported.
+This matrix can be controlled through the front panel buttons, IR remote control, RS-232
+commands and Web GUI.
+
+2. Features
+
+ Supports 10.2Gbps video bandwidth
+ Features 2 operational modes:
+
+    - 8×8 Matrix (seamless switching)
+    - Video wall (4×2, 2×2 or 1×8 etc configuration)
+ 8 channel inputs support video resolution up to 4K30Hz, as specified in HDMI 1.4b
+ 8 channel outputs support independent resolution modification:
+    1024x768@60Hz, 1280x720@50Hz, 1280x720@60Hz, 1280x1024@60Hz,
+    1360x768@60Hz, 1440x900@60Hz, 1600x900@60Hz, 1600x1200@60Hz,
+    1920x1080@50Hz, 1920x1080@60Hz, 1920x1200@60Hz, 3840x2160@30Hz,
+    4096x2160@30Hz
+ 8 channel outputs support HDMI and DVI output switching
+ 8 channel outputs support brightness and contrast adjustment
+ Advanced EDID management, supporting preset EDID, copy EDID, custom EDID (upload)
+ Up to 16 preset scenes, supporting preset scene save, call, delete, polling (the polling
+    time can be set)
+ Control via the front panel buttons, IR remote control, RS-232 commands and Web GUI
+
+3. Package Contents
+
+ 1x 4K30 HDMI 8x8 Seamless Matrix
+ 1x IR Remote
+ 2x Mounting Ear
+ 8x Machine Screw (KM3*6)
+ 1x 12V/2.5A Multinational Power Supply (Locking)
+ 1x User Manual
+
+                                                                  1/21
+4. Specifications
+
+Technical
+
+HDMI Compliance HDMI 1.4b
+
+HDCP Compliance HDCP 1.4
+
+Video Bandwidth 10.2Gbps
+
+Input/Output Video  640x480p60Hz, 800x600p60Hz, 1024x768p60Hz, 1280x1024p60Hz,
+Resolution          1360x768p60Hz, 1440x900p60Hz, 1440x1050p60Hz,
+                    1600x1200p60Hz, 1920x1200p60Hz (RB),
+                    720x480i59.94Hz(480i59), 720x480p59.94Hz(480p59),
+                    720x576i50Hz(576i50), 720x576p50Hz(576p50),
+                    1280x720p50Hz(720p50), 1280x720p59.94Hz(720p59),
+                    1280x720p60Hz(720p60), 1920x1080i50Hz(1080i50),
+                    1920x1080i59.94Hz(1080i59), 1920x1080i60Hz(1080i60),
+                    1920x1080p23.98Hz(1080p23), 1920x1080p24Hz(1080p24),
+                    1920x1080p25Hz(1080p25), 1920x1080p29.97Hz(1080p29),
+                    1920x1080p30Hz(1080p30), 1920x1080p50Hz(1080p50),
+                    1920x1080p59.94Hz(1080p59), 1920x1080p60Hz(1080p60),
+                    3840x2160p23.98Hz(2160p23), 3840x2160p24Hz(2160p24),
+                    3840x2160p25Hz(2160p25), 3840x2160p29.97Hz(2160p29),
+                    3840x2160p30Hz(2160p30), 4096x2160p23.98Hz, 4096x2160p24Hz,
+                    4096x2160p25Hz, 4096x2160p29.97Hz, 4096x2160p30Hz
+
+HDR                 Support
+
+Color Space         Input: RGB, YCbCr_4:4:4, YCbCr_4:2:2, YCbCr_4:2:0
+Color Depth         Output: RGB, YCbCr_4:4:4, YCbCr_4:2:2
+IR Level
+IR Frequency        8/10/12bit
+
+Audio Formats       5Vp-p
+
+                    Fixed frequency 38KHz
+
+                    HDMI input/output:
+                    LPCM 2.0/5.1/7.1Dolby 2.0/5.1, Dolby Digital Plus 2.0/5.1/7.1,
+                    DTS 2.0/5.1, DTS HD HRA 5.1/7.1
+                    Analog audio outputPCM 2.0
+
+ESD Protection      IEC 61000-4-2:
+                    ±8kV (Air-gap discharge) & ±4kV (Contact discharge)
+
+Connection
+
+Input               8x INPUT [HDMI Type A, 19-pin female]
+Output
+Control             8x OUTPUT [HDMI Type A, 19-pin female]
+                    1x AUDIO OUT [3.5mm Stereo Mini-jack]
+
+                    1x RS-232 [D-Sub 9female]
+                    1x TCP/IP [RJ45]
+
+                             2/21
+Mechanical
+
+Housing              Metal Enclosure
+
+Color                Black
+
+Dimensions           440mm (W) × 203mm (D) × 44.5mm (H)
+
+Weight               2.56kg
+
+Power Supply         Input: AC 100~240V 50/60Hz
+                     Output: DC 12V/2.5A (US/EU standard, CE/FCC/UL certified)
+
+Power Consumption 17.52W (MAX)
+
+Operating Temperature 0°C ~ 40°C / 32°F ~ 104°F
+
+Storage Temperature -20°C ~ 60°C / -4°F ~ 140°F
+
+Operating Humidity 20%~80% (Relative Humidity, non-condensing)
+
+Storage Humidity     10%~90% (Relative Humidity, non-condensing)
+
+Recommended HDMI Cable
+
+Video Resolution             4K30                                   1080P60
+
+HDMI Cable Length            10m/33ft                               15m/49ft
+(HDMI IN / OUT)
+
+The use of "Premium High Speed HDMI"cable is highly recommended.
+
+5. Operation Controls and Functions
+
+5.1 Front Panel
+
+                  1  23                              4                     5 67
+
+                                      1  2     3  4     5  6  7  8  MENU   UP    POWER
+
+                             OUTPUT
+
+                     PWR
+                       IR
+
+                             INPUT
+
+                                      1  2     3  4     5  6  7  8  ENTER  DOWN  LOCK
+
+No.      Name                            Function Description
+
+1 LCD screen         The current input/output channel mapping of the matrix is displayed
+                     by default. Information such as output resolution, EDID, baud rate,
+                     and IP address can be displayed by pressing menu buttons.
+
+2 PWR LED            The LED will light in green when the matrix is working, and red
+                     when the matrix is on standby.
+
+3 IR window          IR signal receiving window, receiving the fixed frequency 38KHz IR
+                     remote signal.
+
+                     Input/output channel switching buttons. Firstly press the OUTPUT
+
+4    INPUT / OUTPUT  (1-8) button to select the output channel, and the corresponding
+     1~8buttons      output channel will flash on the LCD screen. Then press the INPUT
+                     (1-8) button to select the input signal source and the corresponding
+
+                     input channel will be displayed on the LCD screen.
+
+                                         3/21
+No.  Name                                  Function Description
+
+     MENU/ENTER/  MENU: The menu button, with three primary menus (OUTPUT/
+5 UP/DOWN         INPUT/SETUP), which can set various functions of the matrix,
+                  including output resolution/color space conversion/mode/signal
+     button       format/stream, input EDID, buzzer switch, screen display mode
+                  switch, baud rate, DHCP switch, restart and reset.
+6 POWER button    UP: Press the UP button to select the previous item.
+7 LOCK button     DOWN: Press the DOWN button to select the next item.
+                  ENTER: Confirm button.
+                  For example: Switch the resolution of output channel 2 to resolution
+                  1080P 60Hz.
+                  On the condition that the LCD screen is in default display state
+                  and the front panel buttons are not locked,
+                  Step 1: Press MENU button, LCD screen will display "MENU->
+                  OUTPUT".
+                  Step 2: Press ENTER button, LCD screen will display "OUTPUT->
+                  RESO".
+                  Step 3: Press ENTER button, LCD screen will display two lines of
+                  content. The top line is "OUTPUT ->RESO", and the bottom line is
+                  "OUT1: 4K * 2K30".
+                  Step 4: Press UP/DOWN button to switch to output channel 2.
+                  Step 5: Press ENTER button, the current resolution of output
+                  channel 2 will flash on the LCD screen.
+                  Step 6: Press UP/DOWN button to switch to 1080P60Hz.
+                  Step 7: Press ENTER button to confirm, LCD screen will display
+                  "SUCCESS"and the switching is completed.
+                  Notes
+                  · Pressing the MENU button will return to the previous menu.
+                  · In any level menu, it will return to the initial display screen if no
+
+                   operation goes on within 10 seconds.
+
+                  Press and hold the button for 3 seconds to enter the standby mode,
+                  then short press it to wake up the device.
+
+                  Short press the LOCK button to lock front panel buttons (except
+                  the power button); Press it again to unlock.
+
+                  4/21
+5.2 Rear Panel
+
+                                                                                                                 45                             6
+
+                                                                                                                  TCP/IP         RS-232         DC 12V
+                                                                                                                 OUTPUT
+                                      INPUT
+
+      IN 1  IN 2       IN 3     IN 4         IN 5     IN 6  IN 7  IN 8  AUDIO OUT 1  OUT 1  OUT 2  OUT 3  OUT 4           OUT 5  OUT 6   OUT 7  OUT 8
+
+                                      1                                 2                                        3
+
+No.                  Name                                               Function Description
+
+   1        INPUT 1~8 ports                           HDMI signal input ports, connected to HDMI source devices such
+                                                      as PC, DVD or Set-top box with an HDMI cable.
+
+   2        AUDIO OUT 1 port                          Analog audio output port, only following the audio output of the
+                                                      OUTPUT 1 port.
+
+   3        OUTPUT 1~8                                HDMI signal output ports, connected to HDMI display devices
+            ports                                     such as TV or Monitor with an HDMI cable.
+
+   4 TCP/IP port                                      LAN portused for network input control. Users can access to the
+                                                      Web GUI or Host Computer through this port.
+
+   5 RS-232 port                                      RS-232 serial port, connected to the PC or control system to
+                                                      control the matrix through RS-232 commands transmission or
+                                                      Host Computer operation.
+
+   6 DC 12V                                           DC 12V/2.5A power input port.
+
+6. IR Remote
+
+1                                                                  Power on or Standby: Power on the Matrix or set it to
+                                                                  standby mode.
+                                Input                              Input 1/2/3/4/5/6/7/8: Select the input signal source.
+
+                  1          2         3           4                        : Select the previous or next input signal source.
+                                                                   Output 1/2/3/4/5/6/7/8: Select the output channel.
+2                 5          6         7           8              All: Select all output channels simultaneously. For example,
+                                                                  when you press the "All" button and then press input "1"
+                             Output                               button, at this time the input "1" source will output to all display
+                                                                  devices.
+                  1          2         3           4
+                                                                  Operation instruction: You need to press the output button
+3                 5          6         7           8              firstly and then press input button to select the corresponding
+                                                                  input source. For example,
+                  All                                             Press Output-X
+                                                                  (X means output button from 1 to 8 , including "All" button)
+                  HDMI Matrix Remote                              Then press Input-Y
+                                                                  (Y means input button from 1 to 8 )
+
+                                                                                  5/21
+7. LCD Screen Menu Navigation
+
+Various functions of the matrix can be set through the operation of buttons on the front panel,
+and the corresponding content can be displayed on the LCD screen.
+The LCD screen menu navigation consists of three primary menus "OUTPUT/INPUT/SETUP",
+as well as corresponding secondary and tertiary menus. The specific contents are as follows.
+
+Level 1          Level 2                       Level 3
+
+OUTPUT   RESO             4096x2160p 30Hz, 3840x2160p 30Hz,
+                          1920x1200p 60Hz,
+         CSC              1920x1080p 60Hz (default),
+         MODE             1920x1080p 50Hz, 1600x1200p 60Hz,
+         FORMAT           1600x900p 60Hz, 1440x900p 60Hz,
+         STREAM           1360x768p 60Hz, 1280x1024p 60Hz,
+                          1280x720p 60Hz, 1280x720p 50Hz,
+INPUT    EDID             1024x768p 60Hz
+
+SETUP    BEEP             RGB 4:4:4, YCbCr 4:4:4, YCbCr 4:2:2
+         LCD ONTIME
+                          Seamless, Bypass
+         BAUDRATE
+         IP INFO          HDMI, DVI
+         REBOOT
+         RESET            Enable, Disable
+
+                          4K2K30, 2.0CH
+                          4K2K30, 5.1CH
+                          4K2K30, 7.1CH
+                          1080P, 2.0CH
+                          1080P, 5.1CH
+                          1080P, 7.1CH
+                          WUXGA, 2.0CH
+                          768P, 2.0CH
+                          XGA, 2.0CH
+                          User Define1
+                          User Define2
+                          Copy Output1
+                          Copy Output2
+                          Copy Output3
+                          Copy Output4
+                          Copy Output5
+                          Copy Output6
+                          Copy Output7
+                          Copy Output8
+
+                          OFF, ON
+
+                          OFF, ALWAYS ON, 15 SECOND,
+                          30 SECOND, 60 SECOND
+
+                          4800, 9600, 19200, 38400, 57600,
+                          115200
+
+                          OFF, ON
+
+                          /
+
+                          /
+
+                          6/21
+8. EDID Management
+
+This matrix has 9 factory defined EDID settings, 2 user-defined EDID modes and 8 copy EDID
+modes. You can select defined EDID mode or copy EDID mode to input port through front
+panel buttons, RS-232 command or Web GUI operation.
+Front panel buttons operation: On the initial LCD display screen, press "MENU" button to
+enter the level 1 menu, press "UP/DOWN" button to select INPUT, and then press "ENTER"
+button. Now the EDID item appears. Press the "ENTER" button, and then press "UP/DOWN"
+button to select the input channel. Press the "ENTER" button, and then press "UP/DOWN"
+button to select the EDID mode you need. Finally, press "ENTER" button to confirm, then the
+LCD screen will prompt "SUCCESS".
+
+OUTPUT: 1 2 3 4 5 6 7 8                                                                                                                         INPUT -> EDID      ENTER  INPUT -> EDID
+   INPUT: 1 2 3 4 5 6 7 8                                                                                                                                                 IN1: 4K2K30,5.1CH
+                                                                                                                                                IN1: 4K2K30,5.1CH
+        MENU
+                                                                                                                                                UP
+                                  MENU -> OUTPUT
+                                                                                                                                                    DOWN
+                                                                               UP
+                                                                                                             DOWN                               INPUT -> EDID
+                                                                                                                                                IN2: 1080P, 2.0CH
+                                  MENU -> INPUT
+                                                                                                                                                UP
+                                                                               UP
+                                                                                                             DOWN                                   DOWN
+
+                                  MENU -> SETUP                                                                    ENTER                 ENTER  INPUT -> EDID
+                                                                                                                                                IN3: Copy Output1
+                                                                                                                          INPUT -> EDID
+
+                                                                                                                                                UP
+
+                                                                                                                                                    DOWN
+
+                                                                                                                                                INPUT -> EDID
+                                                                                                                                                IN4: XGA, 2.0CH
+
+                                                                                                                                                UP
+
+                                                                                                                                                    DOWN
+
+                                                                                                                                                INPUT -> EDID
+                                                                                                                                                IN5: 1080P, 5.1CH
+
+                                                                                                                                                UP
+
+                                                                                                                                                    DOWN
+
+                                                                                                                                                INPUT -> EDID
+                                                                                                                                                IN6: Copy Output2
+
+                                                                                                                                                UP
+
+                                                                                                                                                    DOWN
+
+                                                                                                                                                INPUT -> EDID
+                                                                                                                                                IN7: 1080P, 7.1CH
+
+                                                                                                                                                UP
+
+                                                                                                                                                    DOWN
+
+                                                                                                                                                INPUT -> EDID
+                                                                                                                                                IN8: 4K2K30,7.1CH
+
+                                                                                                                   Note: Pressing the "MENU" button will return to the previous menu.
+
+RS-232 command operation: Connect the matrix to the PC with a serial cable, then open a
+serial command tool on PC to send ASCII command "s edid in x from z!" to set EDID. For
+details, please refer to "EDID Setting" in the ASCII command list of "10. RS-232 Control
+Commands".
+Web GUI Operation: Please check the EDID management in the "Input page" of "10. Web
+GUI User Guide".
+
+                                                                                                                          7/21
+The defined EDID setting list of the product is shown as below:
+
+EDID Mode            EDID Description
+       1   4K2K30 444, Stereo Audio 2.0
+       2   4K2K30 444, Dolby/DTS 5.1
+       3   4K2K30 444, HD Audio 7.1
+       4   1080P Stereo Audio 2.0
+           1080P Dolby/DTS 5.1
+       5   1080P HD Audio 7.1
+       6   1920x1200, Stereo Audio 2.0
+       7   1360x768, Stereo Audio 2.0
+       8   1024x768, Stereo Audio 2.0
+       9   User define1
+      10   User define2
+      11   Copy from HDMl output 1
+      12   Copy from HDMl output 2
+      13   Copy from HDMl output 3
+      14   Copy from HDMl output 4
+      15
+           Copy from HDMl output 5
+      16   Copy from HDMl output 6
+      17   Copy from HDMl output 7
+      18   Copy from HDMl output 8
+      19
+
+Note: When copying a certain output EDID, but this output channel is not connected to a TV,
+please use the default 1080p, Stereo Audio 2.0 instead.
+
+           8/21
+9. Web GUI Operation GuideLAN
+
+9.1 ConnectionLAN
+The matrix can be controlled by Web GUI. The operation method is shown as below:
+Step 1: Get the IP address of the matrix.
+Before connecting and logging into the Web GUI, it is necessary to obtain the IP address of the
+matrix. The default IP address is 192.168.1.100. You can get the current IP address via RS-232
+commandSend the ASCII command " r ip addr!" through a serial command tool, then you'll get
+the current IP address of the matrix.
+Step 2: Connect the TCP/IP port of the matrix to the PC with an UTP network cable, and set
+the IP address of the PC to be in the same network segment with the matrix.
+
+                                                                               PC
+
+9.2 Login
+Input the current IP address of matrix into the browser on the PC to enter the Web GUI login
+page.
+
+Select the username and the desired language, then enter the password. The default
+passwords are as follows.
+
+     Username Password
+
+     Admin       admin
+
+     User        user
+
+After entering the password, click the "LOGIN" button to access to the Web GUI main page.
+                                                                  9/21
+9.3 Web GUI Interface Instruction
+ Status
+The Status page provides basic information about the matrix, such as model, firmware
+version, hostname and the network settings.
+
+ Input
+
+You can do the following operations on the Input page:
+ Inputs: Input channel of the matrix.
+All Inputs: The settings of All Inputs is available to all inputs above if you select a value
+from the drop-down list.
+ Active: It indicates whether the channel is connected to a signal source. It is green if the
+input signal is detected, and gray if no signal.
+ Name: The input channel's name, which can be modified by entering the corresponding
+name in the input box. The maximum length of the name is 10 English characters or 5 Chinese
+characters (numbers and special characters are supported).
+ EDID: You can set the current channel's EDID. Click drop-down list to select.
+ Load EDID to user memory: Set EDID for the User.
+Click the "Browse" button, then select the bin file. If you select the wrong EDID file, there will
+be a prompt, as shown in the following figure:
+
+                                                                 10/21
+Make sure to select the correct file, then you can check the name of the selected file. Select
+"User Define1" or "User Define2", then click "Upload". After successful setting, it will prompt
+as follows:
+
+ Download EDID to your computer:
+Click the drop-down box of "Select EDID File" to select the corresponding input channel. Then
+click "Download" to download the corresponding EDID file.
+ Output
+
+You can do the following operations on the Output page:
+ Outputs: Output channel of the matrix.
+All Outputs: The settings of All Outputs is available to all outputs above if you select a value
+from the drop-down list.
+ Cable: It indicates the connection status of output ports. When the output port is connected
+to the display, it shows green, otherwise, it shows gray.
+ Name: The output channel's name, which can be modified by entering the corresponding
+name in the input box. The maximum length of the name is 10 English characters or 5 Chinese
+characters (numbers and special characters are supported).
+ Output Resolution: Set the current output resolution. Click the drop-down list to select other
+resolutions.
+ Color Space: Set the color space of the output signal.
+ Output Format: Set the output signal format (HDMI/DVI).
+ Brightness: Adjust the brightness of the output signal.
+ Contrast Ratio: Adjust the contrast ratio of the output signal.
+ Stream: Turn on/off the signal output stream of the output port.
+Note: User cannot set each output resolution separately in video wall mode.
+
+                                                                 11/21
+ Video
+On the video page, you can set two video display modes: Matrix and Video Wall. In each
+mode, you can set, save, call or delete preset scenes as required, supporting up to 16
+presets. In addition, preset scene polling is supported.
+ Matrix: Click "Matrix" to enter the matrix setting mode, then click the corresponding
+button to select the matrix switching mode (Seamless/Bypass).
+Seamless switching mode
+
+Bypass output mode
+
+Click to select the input source in the Matrix Switching area, then select the output channel
+that needs to be switched to complete the "one-to-one" or "one-to-many" switching. If you
+select the input source and then click the "All" button, the "one-to-all" switching is completed,
+that is, the input signal source will switch to all output channels at the same time. If "PTP" is
+selected, all input channels and output channels are switched one by one. If switching from
+non-matrix mode to matrix mode, the corresponding relationship of the original matrix mode
+will be restored.
+
+                                                                 12/21
+ Video Wall: Click "Video Wall" to enter the video wall splicing mode.
+
+Follow the steps below to create or configure a video wall.
+Step 1: Click "+/-" to set the number of row and column for the video wall.
+Step 2: Set the mapping relationship between the splicing screen and the output. The default
+setting is one-to-one mapping, and users can also click on Output 1/2/3/4/5/6/7/8 button or
+
+   / in "Output Source" to select the output channel to be switched.
+Step 3: Click on Input 1/2/3/4/5/6/7/8 button or / in "Input Source" to select the input
+source.
+Step 4: Hold down the left mouse button in "Video Wall Adjustment" and drag to select the
+screens that need to be spliced.
+Step 5: Click the Screen Splicing button to complete the video wall splicing settings.
+
+ Preset: The Matrix supports 16 scene presets by default, and users can set, save, call
+delete scenes as required, or set preset scene polling. The scene name can be modified, with
+a maximum length of 10 English characters or 5 Chinese characters (supporting numbers and
+special characters).
+(1) Preset saving: After completing the Matrix/Video Wall settings, click the mouse in "Scene
+List" to select the scene number to be saved, and then click the "Save" button to save the
+preset scene.
+(2) Preset calling: Click to select the preset scene name in "Scene List", then click the "Call"
+button to call the scene.
+(3) Preset deleting: Click to select the preset scene name in "Scene List", then click the
+"Delete" button to delete the scene.
+(4) Preset polling: Click the "Polling" button in "Scene List", then click to select the saved
+preset scenes (Note: The unsaved scenes are gray, and can not be used for preset polling)
+in the pop-up Scene Polling window. Click "+/-" to set the polling time (up to 180 seconds),
+then click "Notarize" to complete the setting. Finally, click the "Start" button in "Scene List" to
+start preset polling.
+Note: Any setting operation (such as switching matrix correspondence relationships) by the
+users may interrupt the preset polling.
+
+                                                                 13/21
+ System
+
+You can do the following operations on the System page:
+ Modify Network Setting
+You can set the IP Mode (Static/DHCP). If the mode is set to "Static", you can manually set
+the IP Address, Gateway, Subnet, Tenet Port and TCP Port as required, then click "Save" to
+take effect. If the mode is set to "DHCP", the system will search and fill the IP Address with
+the one assigned by the router automatically. You can't modify it now.
+
+                                                                 14/21
+ Modify Web Login Password
+You can modify the Web login password for the User/Admin account. Enter the correct Old
+Password, New Password, and Confirm Password, then click "Save". After successful
+modification, there will be a prompt, as shown in the following figure:
+
+Note: Input rules for changing passwords:
+(1) The password can't be empty.
+(2) New Password can't be the same as Old Password.
+(3) New Password and Confirm Password must be the same.
+ Set the Default Network
+Click "Set Network Defaults" button, there will be a prompt, as shown in the following figure:
+
+Click "OK" to search the IP Address again. After searching is completed, it will switch to the
+login page, the default network setting is completed.
+ Panel Lock: Click to lock/unlock panel buttons. "ON" indicates that panel buttons are
+unavailable; "OFF" indicates that panel buttons are available.
+ Beep: Click to turn on/off the beep.
+ LCD ON Time: Click to turn on/off the LCD, or set the LCD display duration time (Always
+ON/15s/30s/60s).
+ Serial Baud Rate: Click the value to set the Serial Baud Rate.
+ Firmware Update: Click "Browse" to select the update file, then click "Update" to complete
+firmware update.
+ Factory Reset: Reset the machine to factory defaults by clicking "Reset".
+ Reboot: Reboot the machine by clicking "Reboot".
+Note: After reset/reboot, it will switch to the login page.
+
+10. RS-232 Control Commands
+
+The product also supports RS-232 command control. Connect the RS-232 port of the product
+to a PC with an USB to RS-232 serial cable. Then open a Serial Command tool on PC to send
+ASCII commands to control the product.
+The ASCII commands list about the product is shown as below.
+
+                                                                 15/21
+                                              ASCII Command
+
+Serial port protocol: baud rate: 115200 (default) Data bits: 8 Stop bits: 1 Check bit: 0
+
+TCP/IP protocol port: 8000             Telnet port:23
+
+x,y,z, XXX are parameters              Error Code describe: E00 -> unkown command
+E01 -> parameter out of range          E02 -> get the error edid data
+Version: V1.00.01
+
+Command Code       Function Description                  Example    Feedback                   Default Setting
+
+Power setting
+
+                                                                    power off
+
+s power z!         Power on/off the device,          s power 0!     power on                   power on
+                   z=0~1                             s power 1!     system initializing...
+                   (z=0 power off, z=1 power on)                    initialization finished!
+                                                                    fw version 1.00.01
+r power!           Get current power state           r power!
+                                                                    power on /power off
+s reboot!          Reboot the device                 s reboot!
+                                                                    reboot...
+                                                                    system initializing...
+                                                                    initialization finished!
+                                                                    fw version 1.00.01
+
+System setting
+
+help!              Lists all commands                help!
+
+?!                 Lists all commands                ?!
+                   Get device model
+r type!            Set device model name             r type!        device type:
+                                                                    HDP-MX988SL
+s type
+****************!                                    s type         device type:
+
+                                                     HDP-MX988SL! HDP-MX988SL
+
+r status!          Get device current status         r status!      get the unit all status:
+                                                                    power, beep, lock, in /
+                                                                    out connection, video/
+                                                                    audio crosspoint, edid,
+                                                                    scaler, network status
+
+r fw version!      Get firmware version              r fw version!  mcu fw version:
+                                                                    v1.00.01
+                                                                    web GUI version:
+                                                                    v2.00.01
+
+r link in x!       Get the connection status of the  r link in 1!   HDMI input 1: connect
+                   x input portx=0~8 (0=all)
+
+r link out y!      Get the connection status of the  r link out 1!  HDMI output 1: connect
+s reset!           y output porty=0~8 (0=all)
+s beep z!
+                   Reset to factory defaults         s reset!       reset to factory defaults
+                                                                    system data init
+                   Enable/disable buzzer function, s beep 1!        system initializing...     beep on
+                   z=0~1(z=0 beep off, z=1 beep on) s beep 0!       initialization finished!
+                                                                    fw version 1.00.01
+
+                                                                    beep on
+                                                                    beep off
+
+r beep!            Get buzzer state                  r beep!        beep on / beep off
+
+s lock z!          Lock/unlock front panel button, s lock 1!        panel button lock on       panel button
+                   z=0~1 (z=0 lock off, z=1 lock on) s lock 0!      panel button lock off      lock off
+
+r lock!            Get panel button lock state       r lock!        panel button lock on
+
+                                                     16/21
+Command Code        Function Description               Example            Feedback                Default Setting
+
+s save preset z!    Save switch state between all      s save preset 1! save to preset 1!         LCD on 60
+s recall preset z!  output port and the input port to                                             seconds
+s clear preset z!   preset zz=1~16                                                                115200
+r preset z!                                                                                       ptp
+s lcd on time z!    Call saved preset z scenarios      s recall preset 1! recall from preset 1
+r lcd mode!         z=1~16                                                                        enable
+s baudrate z!
+                    Clear stored preset z scenarios,   s clear preset 1!  clear preset 1!
+                    z=1~16
+
+                    Get preset z information, z=1~16 r preset 1!          video/audio crosspoint
+
+                    Set LCD screen remain on time,     s lcd on time 2!   LCD on 15 seconds
+                    z=0~4 (0:off, 1:always, 2:15s,     r lcd mode!        LCD on 15 seconds
+                    3:30s ,4:60s)                      s baudrate 6!      baudrate :115200
+
+                    Get the backlight status of LCD
+                    screen
+
+                    Set baudrate,
+                    z=1~6 (1:480, 2:9600, 3:19200,
+                    4:38400, 5:57600, 6:115200)
+
+r baudrate!         Get baudrate                       r baudrate!        baudrate :115200
+
+Output setting
+
+s in x av out y!    Set input x to output y,           s in 1 av out 2! input 1 -> output 2
+                    x=1~8, y=0~8 (0=all)
+
+r av out y!         Get output y signal status         r av out 0!        input 1 -> output 1
+                    y=0~8 (0=all)                                         input 2 -> output 2
+                                                                          input 3->output 3
+                                                                          input 4 -> output 4
+                                                                          input 5->output 5
+                                                                          input 6->output 6
+                                                                          input 7->output 7
+                                                                          input 8->output 8
+
+                          Set output y stream on/off,  s hdmi 1           HDMI output 1
+                                                       stream 1 !         stream: enable
+s hdmi y stream z! y=0~8 (0=all)
+                          z=0~1 (0:disable, 1:enable)
+
+r hdmi y stream!    Get output y stream status,        r hdmi 1 stream!   HDMI output 1
+                    y=0~8 (0=all)                                         stream: enable
+
+s hdmi y res z!     Set HDMI output y resolution z,    s hdmi 1 res 4!    HDMI output 1
+                    y=0~8 (0=all), z=1~13                                 resolution 1920x
+                    z=1: 4096x2160p30Hz                                   1080P60Hz
+                    z=2: 3840x2160p30Hz
+                    z=3: 1920x1200p60Hz
+                    z=4: 1920x1080p60Hz
+                    z=5: 1920x1080p50Hz
+                    z=6: 1600x1200p60Hz
+                    z=7: 1600x900p60Hz
+                    z=8: 1440x900p60Hz
+                    z=9: 1360x768p60Hz
+                    z=10: 1280x1024p60Hz
+                    z=11: 1280x720p60Hz
+                    z=12: 1280x720p50Hz
+                    z=13: 1024x768p60Hz
+
+r hdmi y res!       Get HDMI output y resolution,      r hdmi 1 res!      HDMI output 1
+                    y=0~8 (0=all)                                         resolution 1920x
+                                                                          1080P60Hz
+
+                    Set HDMI output y color space z,
+
+s hdmi y csc z!     y=0~8 (0=all),                     s hdmi 1 csc 1!    HDMI output 1 color
+                    z=1~3 (1:RGB444, 2:YCbCr444,                          space RGB444
+
+                    3:YCbCr422)
+
+                                                       17/21
+Command Code      Function Description                         Example                Feedback            Default Setting
+                                                          r hdmi 1 csc!
+r hdmi y csc!     Get HDMI output y color space,                               HDMI output 1 color
+                  y=0~8 (0=all)                                                space RGB444
+
+                          Set HDMI output y format z,     s hdmi 1             HDMI output 1 format
+                                                          format 1!            HDMI
+s hdmi y format z! y=0~8 (0=all),
+                          z=1~2 (1:HDMI, 2:DIV)
+
+r hdmi y format!  Get HDMI output y format,               r hdmi 1 format!     HDMI output 1 format
+                  y=0~8 (0=all)                                                HDMI
+
+s hdmi y bri z!   Set HDMI output y brightness z,         s hdmi 1 bri 0!      HDMI output 1
+r hdmi y bri!     y=0~8 (0=all),                          r hdmi 1 bri!        brightness 0
+s hdmi y con z!   z=0~100                                 s hdmi 1 con 0!
+r hdmi y con!                                                                  HDMI output 1
+                  Get HDMI output y brightness,                                brightness 0
+                  y=0~8 (0=all)
+                                                                               HDMI output 1
+                  Set HDMI output y contrast z,                                contrast 0
+                  y=0~8 (0=all),
+                  z=0~100                                 r hdmi 1 con!        HDMI output 1
+                                                                               contrast 0
+                  Get HDMI output y contrast,
+                  y=0~8 (0=all)
+
+s display mode x! Set matrix display mode,                s display mode 1! display mode matrix
+                          x=1~2 (1:matrix, 2:video-wall)
+
+r display mode! Get matrix display mode                   r display mode! display mode matrix
+
+EDID setting
+
+                  Set input x edid from default edid
+
+                  z, x=0~8 (0=all), z=1~15
+
+                  z=1: 4K2K30_444,stereo audio 2.0
+
+                  z=2: 4K2K30_444,dolby/DTS 5.1
+
+                  z=3: 4K2K30_444,HD audio 7.1
+
+                  z=4: 1920x1200,stereo audio 2.0
+
+                  z=5: 1080P,stereo audio 2.0
+
+                  z=6: 1080P,dolby/DTS 5.1                s edid in 1 from 1!
+
+                         z=7: 1080P,HD audio 7.1                               input 1 edid:              1080p,stereo
+                                                                               4k30,2.0ch                 audio 2.0
+                         z=8: 1360x768,stereo audio 2.0                        all input edid:
+                                                                               4K30,2.0ch
+s edid in x from z! z=9: 1024x768,stereo audio 2.0
+                         z=10: user1
+
+                         z=11: user2
+
+                  z=12: copy from HDMI output 1           s edid in 0 from 1!
+                  z=13: copy from HDMI output 2
+
+                  z=14: copy from HDMI output 3
+
+                  z=15: copy from HDMI output 4
+
+                  z=16: copy from HDMI output 5
+
+                  z=17: copy from HDMI output 6
+
+                  z=18: copy from HDMI output 7
+
+                  z=19: copy from HDMI output 8
+
+r edid in x!      Get input edid mode,                    r edid in 1!         input 1 edid:1080p, 2.0ch
+                  x=0~8 (0=all)
+
+                                                          18/21
+Command Code         Function Description             Example           Feedback                 Default Setting
+
+r edid data hdmi y!  Get the edid data of the HDMI    r edid data       HDMI out 1 edid:
+                     output y porty=1~8               hdmi 1!           00 FF FF FF FF FF FF 00
+                                                                        1D D3 46 ED 1B 27 00 00
+                                                                        01 15 01 03 80 65 39 78
+                                                                        2E 0C 55 A2 56 4C 96 25
+                                                                        1A 50 54 BF EF 80 81 80
+                                                                        8B C0 61 40 45 40 81 40
+                                                                        D1 C0 90 40 95 00 02 3A
+                                                                        80 40 71 38 1B 40 40 72
+                                                                        13 00 35 AD 10 00 00 1E
+                                                                        3E 1C 56 A0 50 00 16 30
+                                                                        30 20 35 00 35 AD 10 00
+                                                                        00 1E 00 00 00 FD 00 32
+                                                                        4B 1E 50 10 00 0A 20 20
+                                                                        20 20 20 20 00 00 00 FC
+                                                                        00 47 2D 44 48 44 0A 20
+                                                                        20 20 20 20 20 20 01 11
+                                                                        02 03 1B 71 47 01 03 84
+                                                                        05 12 13 14 23 0F 57 07
+                                                                        83 4F 00 00 66 03 0C 00
+                                                                        10 00 80 01 1D 80 18 71
+                                                                        1C 16 20 58 2C 25 00 C4
+                                                                        8E 21 00 00 9E 8C 0A D0
+                                                                        8A 20 E0 2D 10 10 3E 96
+                                                                        00 13 8E 21 00 00 18 8F
+                                                                        0A D0 8A 20 E0 2D 10 10
+                                                                        3E 96 00 C4 8E 21 00 00
+                                                                        18 8C 0A D0 8A 20 E0 2D
+                                                                        10 10 3E 96 00 13 8E 21
+                                                                        00 00 18 8C 0A D0 8A 20
+                                                                        E0 2D 10 10 3E 96 00 C4
+                                                                        8E 21 00 00 18 00 00 00
+                                                                        00 00 00 00 00 00 00 B7
+
+Video Wall setting
+
+creat vw screen      Create video wall screen rows and creat vw screen  create vw screen 2x2 4x2
+row x col y!         columns layouts, x=1~8, y=1~8 row 2 col 2!
+                                                                        HDMI output1->
+s screen x           Set HDMI output y to screen x,   s screen 1        screen 1
+output y!            x=1~8, y=1~8                     output 1!
+
+s vw group z         Set video wall group z rows and  s vw group 1      vw group 1 row2 col 2
+row x col y!         columns, z=1~4, x=1~8, y=1~8     row 2 col 2!
+                     (x*y<=8)
+
+s vw group z         Set video wall group z screen    s vw group 1      vw group 1 screen 1
+screen a!            number, z=1~4, a=1~8             screen 1!
+
+s vw group z         Set video wall group z select input s vw group 1   vw group 1 source 1
+source x!
+                     source, z=1~4, x=1~8             source 1!
+
+delete vw group z! Delete video wall group z, z=1~4 delete vw group 1! delete vw group 1!
+
+r vw info!           Get current video wall scene     r vw info!        mosaic id:1
+                     information                                        mosaic row:2
+                                                                        mosaic col:2
+Network setting                                                         mosaic src:1
+                                                                        mosaic res: 3840x2160
+r ipconfig!          Get the current IP configuration r ipconfig !      mosaic screen: 1
+
+                                                                        IP mode: DHCP
+                                                                        IP: 192.168.99.100
+                                                                        subnet mask:
+                                                                        255.255.255.0
+                                                                        gateway: 192.168.99.1
+                                                                        TCP/IP port: 8000
+                                                                        telnet port: 23
+                                                                        MAC: 6C:DF:FB:06:
+                                                                        F5:EE
+                                                                        (static: 192.168.1.100
+                                                                        255.255.255.0
+                                                                        192.168.1.1)
+
+                                                      19/21
+Command Code      Function Description                   Example            Feedback            Default Setting
+                                                    r mac addr!
+r mac addr!       Get network MAC address           s ip mode 0!    MAC address:
+                                                    r ip mode!      6C:DF:FB:06:F5:EE
+s ip mode z!      Set network IP mode to static IP                  IP mode: static
+r ip mode!        or DHCP,                          s ip addr       (please use "s net
+                  z=0~1 (z=0 static, z=1 DHCP )     192.168.1.100!  reboot" command or
+                                                                    repower device to
+                  Get network IP mode               r ip addr!      apply new config!)
+
+                                                    s subnet        IP mode: DHCP
+                                                    255.255.255.0!  DHCP on, device can't
+                                                                    config static address,
+                                                    r subnet!       set DHCP off first.
+
+s ip addr         Set network IP address            s gateway       IP address:
+xxx.xxx.xxx.xxx!                                    192.168.1.1!    192.168.1.100
+                                                    r gateway!      (please use "s net
+r ip addr!        Get network IP address                            reboot" command or
+                                                                    repower device to
+                                                                    apply new config!)
+
+                                                                    IP address:
+                                                                    192.168.99.100
+                                                                    DHCP on, device can't
+                                                                    config static address,
+                                                                    set DHCP off first.
+
+s subnet          Set network subnet mask                           subnet mask:
+xxx.xxx.xxx.xxx!                                                    255.255.255.0
+                                                                    (please use "s net
+r subnet!         Get network subnet mask                           reboot" command or
+                                                                    repower device to
+                                                                    apply new config!)
+
+                                                                    subnet mask:
+                                                                    255.255.255.0
+
+                                                                    DHCP on, device can't
+                                                                    config static address,
+                                                                    set DHCP off first.
+
+s gateway         Set network gateway                               gateway: 192.168.1.1
+xxx.xxx.xxx.xxx!                                                    (please use "s net
+                                                                    reboot" command or
+r gateway!        Get network gateway                               repower device to
+s tcp/ip port x!                                                    apply new config!)
+r tcp/ip port!    Set network TCP/IP port                           gateway:192.168.99.1
+s telnet port x!  (x=1~65535)
+r telnet port!    Get network TCP/IP port           s tcp/ip port 8000! TCP/IP port: 8000
+
+                  Set network telnet port           r tcp/ip port!  TCP/IP port: 8000
+                  (x=1~65535)
+                                                    s telnet port 23! set telnet port:23
+                  Get network telnet port
+                                                    r telnet port!  telnet port:23
+s net reboot!     Reboot network modules            s net reboot!   the network is restarting.
+                                                                    please wait!
+                                                                    IP mode: DHCP
+                                                                    IP: 192.168.99.100
+                                                                    subnet mask:
+                                                                    255.255.255.0
+                                                                    gateway: 192.168.99.1
+                                                                    TCP/IP port: 8000
+                                                                    telnet port: 23
+                                                                    MAC: 6C:DF:BB:06:
+                                                                    F5:EE
+                                                                    (static: 192.168.1.100
+                                                                    255.255.255.0
+                                                                    192.168.1.1)
+
+                                                    20/21
+11. Application Example                                                     PC or Control System
+
+                                                                 Amplifier
+
+                                    Audio cable                             CAT cable        RS-232
+                                                                                             serial cable
+
+                                                                                        LAN
+
+                        HDMI cable                                          HDMI cable
+DVD or Blu-ray Player
+
+Laptop                              Monitor × 4                                              Video Wall
+  TX Box
+
+The terms HDMI and HDMI High-Definition Multimedia interface, and the HDMI Logo are
+trademarks or registered trademarks of HDMI Licensing LLC in the United States and other
+countries.
+
+                                                                 21/21
+
