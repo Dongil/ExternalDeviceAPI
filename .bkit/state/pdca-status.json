@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-05-06T02:37:47.014Z",
+  "lastUpdated": "2026-05-06T05:30:07.337Z",
   "activeFeatures": [
     "Properties",
     "PN8080Controller",
@@ -11,7 +11,9 @@
     "Visca",
     "Transports",
     "CameraController",
-    "Pelco"
+    "Pelco",
+    "DeviceEmulator",
+    "Emulators"
   ],
   "primaryFeature": "Properties",
   "features": {
@@ -24,9 +26,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-04-22T10:39:58.455Z",
-        "lastUpdated": "2026-05-04T07:14:40.023Z"
+        "lastUpdated": "2026-05-06T05:25:42.156Z"
       },
-      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\CameraController\\Properties\\AssemblyInfo.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\DeviceEmulator\\DeviceEmulator\\Properties\\AssemblyInfo.cs"
     },
     "PN8080Controller": {
       "phase": "do",
@@ -50,9 +52,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-04-22T10:40:14.090Z",
-        "lastUpdated": "2026-05-06T02:05:17.591Z"
+        "lastUpdated": "2026-05-06T05:26:35.646Z"
       },
-      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Core\\ICameraServiceFactory.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\DeviceEmulator\\DeviceEmulator\\Core\\EmulatorRegistry.cs"
     },
     "Models": {
       "phase": "do",
@@ -76,9 +78,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-04-22T10:43:55.645Z",
-        "lastUpdated": "2026-05-06T02:05:29.089Z"
+        "lastUpdated": "2026-05-06T05:30:07.337Z"
       },
-      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\UI\\CameraControl.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\DeviceEmulator\\DeviceEmulator\\UI\\MainForm.cs"
     },
     "Services": {
       "phase": "do",
@@ -102,9 +104,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T07:06:29.817Z",
-        "lastUpdated": "2026-05-04T09:08:50.986Z"
+        "lastUpdated": "2026-05-06T05:20:15.989Z"
       },
-      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Protocols\\Visca\\ViscaResponseParser.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Protocols\\Visca\\ViscaReplyBuilder.cs"
     },
     "Transports": {
       "phase": "do",
@@ -115,9 +117,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-05-04T07:07:26.590Z",
-        "lastUpdated": "2026-05-06T02:37:47.014Z"
+        "lastUpdated": "2026-05-06T05:27:28.799Z"
       },
-      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Transports\\UdpViscaTransport.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\DeviceEmulator\\DeviceEmulator\\Transports\\TcpServerTransport.cs"
     },
     "CameraController": {
       "phase": "do",
@@ -141,9 +143,35 @@
       "documents": {},
       "timestamps": {
         "started": "2026-05-06T02:04:03.447Z",
-        "lastUpdated": "2026-05-06T02:04:23.439Z"
+        "lastUpdated": "2026-05-06T05:20:52.575Z"
       },
-      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Protocols\\Pelco\\PelcoDCodec.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Protocols\\Pelco\\PelcoDCommandParser.cs"
+    },
+    "DeviceEmulator": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-06T05:25:16.554Z",
+        "lastUpdated": "2026-05-06T05:25:16.554Z"
+      },
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\DeviceEmulator\\DeviceEmulator\\Program.cs"
+    },
+    "Emulators": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-06T05:27:54.318Z",
+        "lastUpdated": "2026-05-06T05:28:36.147Z"
+      },
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\DeviceEmulator\\DeviceEmulator\\Emulators\\PelcoDGenericEmulator.cs"
     }
   },
   "pipeline": {
@@ -154,7 +182,7 @@
   "session": {
     "startedAt": "2026-04-22T10:23:37.944Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-05-06T02:37:47.014Z"
+    "lastActivity": "2026-05-06T05:30:07.337Z"
   },
   "history": [
     {
@@ -1192,6 +1220,120 @@
     {
       "timestamp": "2026-05-06T02:37:47.014Z",
       "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:19:33.437Z",
+      "feature": "Visca",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:20:02.350Z",
+      "feature": "Visca",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:20:15.989Z",
+      "feature": "Visca",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:20:29.250Z",
+      "feature": "Pelco",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:20:52.575Z",
+      "feature": "Pelco",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:25:16.554Z",
+      "feature": "DeviceEmulator",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:25:42.156Z",
+      "feature": "Properties",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:25:51.935Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:26:02.986Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:26:19.297Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:26:35.646Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:26:56.639Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:27:11.819Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:27:28.799Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:27:54.318Z",
+      "feature": "Emulators",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:28:19.744Z",
+      "feature": "Emulators",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:28:36.147Z",
+      "feature": "Emulators",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:29:32.124Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T05:30:07.337Z",
+      "feature": "UI",
       "phase": "do",
       "action": "updated"
     }

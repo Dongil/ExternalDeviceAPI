@@ -91,4 +91,55 @@
 
 ---
 
-*마지막 갱신: 2026-05-06 (pelco-d-and-udp-fix 추가)*
+## device-emulator
+
+> Standalone WinForms 디바이스-사이드 에뮬레이터 (`DeviceEmulator/` 별도 솔루션) — 기존 `Xeno.Framework.Camera` 라이브러리에 inverse parser 5 파일 추가하여 controller↔emulator **한 쌍의 자산** 정착
+
+| 항목 | 내용 |
+|------|------|
+| **기능명** | device-emulator |
+| **시작 / 완료 / 보관** | 2026-05-06 (단일 세션) |
+| **PDCA 라운드** | 1 (Design v1.0 → Do → Check 95% → Design v1.1 흡수 → Report) |
+| **매칭율** | **95% (코드)** / **100% (설계, v1.1 흡수 후)** |
+| **신규 솔루션** | `DeviceEmulator/DeviceEmulator.sln` (PN8080Controller.sln 와 분리) |
+| **신규 파일** | 25개 (라이브러리 5 + DeviceEmulator 앱 20) |
+| **수정 파일** | 1 (`Xeno.Framework.Camera.csproj`) |
+| **코드 규모** | ~1,250 LoC |
+| **v1 모델 (5종)** | Sony EVI-H100 Serial, SRG-300H UDP/TCP, FR-H50SN UDP/TCP, Canon CR-N300 UDP, Pelco-D Generic Serial/UDP/TCP |
+| **실측 검증** | **4/5** (Canon CR-N300 UDP 22cmds ✅, FR-H50SN TCP ~50cmds ✅, FR-H50SN UDP 36cmds ✅ 보너스, Pelco-D Serial 31cmds ✅) — 총 ~140 명령 byte-correct |
+| **미실측** | EVI-H100 Serial (OD7), Pelco-D UDP/TCP (OD8), Inject NAK/Latency 500ms (OD6) |
+| **Critical/Major Gap** | 0 |
+| **빌드** | DeviceEmulator.sln + PN8080Controller.sln Release 양쪽 0 경고 0 오류 |
+| **회귀** | 0 (라이브러리: 신규 파일만, 기존 코드 무변경) |
+
+### 보관 문서
+
+| 단계 | 파일 | 분량 |
+|------|------|-----|
+| Plan | [`device-emulator/01-plan.md`](device-emulator/01-plan.md) | ~250 라인 |
+| Design v1.1 | [`device-emulator/02-design.md`](device-emulator/02-design.md) | ~1,800 라인 |
+| Analysis | [`device-emulator/03-analysis.md`](device-emulator/03-analysis.md) | ~150 라인 |
+| Report | [`device-emulator/04-report.md`](device-emulator/04-report.md) | ~250 라인 |
+
+### 핵심 진화 요약
+
+1. **VISCA codec 양방향 (amphibian)**: `ViscaCodec` (controller→bytes) + `ViscaCommandParser` (bytes→ViscaCommand) + `ViscaReplyBuilder` (ACK/Completion/Error 빌드) — 같은 라이브러리 내. 신규 모델 추가 시 controller/emulator 양쪽 동시 구현 패턴 정착
+2. **Server-side transport 반전**: client `UdpViscaTransport` → server `UdpServerTransport` (Sony reply convention 옵션화), `TcpViscaTransport` → `TcpServerTransport`, `SerialViscaTransport` → `SerialServerTransport` (VISCA terminator + Pelco fixed-length 양 framing)
+3. **Wrap-detection 일반화** (Design v1.1 M1 흡수): `data[0]==0x01 && (data[1]==0x00||0x10)` 가드로 RESET (0x0200) 등 제어 패킷이 raw path 로 빠지게 → 1개 `ViscaIpEmulator` 가 Sony+Canon+FR variants 를 per-model branching 없이 커버
+4. **Cross-solution ProjectReference**: `..\..\Xeno.Framework.Camera\Xeno.Framework.Camera.csproj` 상대 경로로 standalone 솔루션이 라이브러리 참조 — VS2022 정상 동작, 기존 솔루션 회귀 0
+5. **에러 주입 + latency 시뮬**: `EmulatorOptions.InjectNak/Timeout/Malformed` + `LatencyMs 0~1000` + `ConsumeOnNextCommand` 1회용 토글 — controller 회복력 검증 인프라 확보
+
+### 후속 작업 (open items)
+
+- OD1 — Inquiry 응답 (현재 미응답 — 4 시나리오 실측 영향 없음)
+- OD2 — Sony reply socket 번호 1 fixed (실 사용 시 옵션화)
+- OD3 — UI Address 필터 (v2 deferred)
+- OD4 — 멀티-인스턴스 port 충돌 — 현재 MessageBox 부분 처리, 가용 port 자동 제안 검토
+- OD5 — RESET (VISCA-IP 0x0200) → 정식 RESET ACK (0x0201) 응답 (현 raw 90 41 FF 응답으로 controller drain 흡수)
+- OD6 — I4 Inject NAK / I5 Latency 500ms 실측 (사용자 환경 준비 시)
+- OD7 — EVI-H100 Serial VISCA 실측 (com0com 또는 USB-RS422 어댑터)
+- OD8 — Pelco-D UDP/TCP 실측 (`SourcePortMirror` 모드 검증)
+
+---
+
+*마지막 갱신: 2026-05-06 (device-emulator 추가)*

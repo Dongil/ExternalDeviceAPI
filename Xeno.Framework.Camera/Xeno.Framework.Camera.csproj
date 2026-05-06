@@ -54,8 +54,13 @@
     <Compile Include="Core\LogEntry.cs" />
     <Compile Include="Protocols\Pelco\PelcoConstants.cs" />
     <Compile Include="Protocols\Pelco\PelcoDCodec.cs" />
+    <Compile Include="Protocols\Pelco\PelcoDCommand.cs" />
+    <Compile Include="Protocols\Pelco\PelcoDCommandParser.cs" />
     <Compile Include="Protocols\Visca\ViscaCodec.cs" />
+    <Compile Include="Protocols\Visca\ViscaCommand.cs" />
+    <Compile Include="Protocols\Visca\ViscaCommandParser.cs" />
     <Compile Include="Protocols\Visca\ViscaConstants.cs" />
+    <Compile Include="Protocols\Visca\ViscaReplyBuilder.cs" />
     <Compile Include="Protocols\Visca\ViscaResponseParser.cs" />
     <Compile Include="Services\EviH100CameraService.cs" />
     <Compile Include="Services\PelcoDCameraService.cs" />
