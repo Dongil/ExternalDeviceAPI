@@ -1,13 +1,17 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-04-23T10:14:29.411Z",
+  "lastUpdated": "2026-05-06T02:37:47.014Z",
   "activeFeatures": [
     "Properties",
     "PN8080Controller",
     "Core",
     "Models",
     "UI",
-    "Services"
+    "Services",
+    "Visca",
+    "Transports",
+    "CameraController",
+    "Pelco"
   ],
   "primaryFeature": "Properties",
   "features": {
@@ -20,9 +24,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-04-22T10:39:58.455Z",
-        "lastUpdated": "2026-04-23T00:54:06.758Z"
+        "lastUpdated": "2026-05-04T07:14:40.023Z"
       },
-      "lastFile": "C:\\Users\\Administrator\\Desktop\\PN-8080 Controller\\Xeno.Framework.Matrix\\Properties\\AssemblyInfo.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\CameraController\\Properties\\AssemblyInfo.cs"
     },
     "PN8080Controller": {
       "phase": "do",
@@ -46,9 +50,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-04-22T10:40:14.090Z",
-        "lastUpdated": "2026-04-23T05:19:50.644Z"
+        "lastUpdated": "2026-05-06T02:05:17.591Z"
       },
-      "lastFile": "C:\\Users\\Administrator\\Desktop\\PN-8080 Controller\\Xeno.Framework.Matrix\\Core\\IMatrixService.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Core\\ICameraServiceFactory.cs"
     },
     "Models": {
       "phase": "do",
@@ -72,9 +76,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-04-22T10:43:55.645Z",
-        "lastUpdated": "2026-04-23T10:14:00.320Z"
+        "lastUpdated": "2026-05-06T02:05:29.089Z"
       },
-      "lastFile": "C:\\Users\\Administrator\\Desktop\\PN-8080 Controller\\PN8080Controller\\UI\\MainForm.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\UI\\CameraControl.cs"
     },
     "Services": {
       "phase": "do",
@@ -85,9 +89,61 @@
       "documents": {},
       "timestamps": {
         "started": "2026-04-23T00:55:05.176Z",
-        "lastUpdated": "2026-04-23T05:20:07.637Z"
+        "lastUpdated": "2026-05-06T02:04:57.867Z"
       },
-      "lastFile": "C:\\Users\\Administrator\\Desktop\\PN-8080 Controller\\Xeno.Framework.Matrix\\Services\\VideohubMatrixService.cs"
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Services\\PelcoDCameraService.cs"
+    },
+    "Visca": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T07:06:29.817Z",
+        "lastUpdated": "2026-05-04T09:08:50.986Z"
+      },
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Protocols\\Visca\\ViscaResponseParser.cs"
+    },
+    "Transports": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T07:07:26.590Z",
+        "lastUpdated": "2026-05-06T02:37:47.014Z"
+      },
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Transports\\UdpViscaTransport.cs"
+    },
+    "CameraController": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-04T07:14:45.689Z",
+        "lastUpdated": "2026-05-04T07:15:05.306Z"
+      },
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\CameraController\\UserSettings.cs"
+    },
+    "Pelco": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-06T02:04:03.447Z",
+        "lastUpdated": "2026-05-06T02:04:23.439Z"
+      },
+      "lastFile": "C:\\Code\\git\\PN-8080 Controller\\Xeno.Framework.Camera\\Protocols\\Pelco\\PelcoDCodec.cs"
     }
   },
   "pipeline": {
@@ -98,7 +154,7 @@
   "session": {
     "startedAt": "2026-04-22T10:23:37.944Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-04-23T10:14:29.411Z"
+    "lastActivity": "2026-05-06T02:37:47.014Z"
   },
   "history": [
     {
@@ -620,6 +676,522 @@
     {
       "timestamp": "2026-04-23T10:14:29.410Z",
       "feature": "PN8080Controller",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:05:00.429Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:05:06.516Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:05:12.460Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:05:18.018Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:05:38.598Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:05:50.723Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:06:07.018Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:06:18.854Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:06:29.817Z",
+      "feature": "Visca",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:07:01.616Z",
+      "feature": "Visca",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:07:11.911Z",
+      "feature": "Visca",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:07:26.590Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:07:44.494Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:08:09.899Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:08:31.209Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:09:09.685Z",
+      "feature": "Properties",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:10:14.533Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:10:22.036Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:11:33.576Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:14:02.230Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:14:40.023Z",
+      "feature": "Properties",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:14:45.689Z",
+      "feature": "CameraController",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:15:05.306Z",
+      "feature": "CameraController",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:15:26.926Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T07:15:48.760Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:23:27.783Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:23:36.444Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:23:44.637Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:23:54.159Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:23:59.812Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:24:04.508Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:24:26.423Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:34:23.044Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:34:43.225Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:34:58.337Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:35:42.032Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:45:17.944Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:45:22.113Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:45:33.931Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:45:43.165Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:45:51.657Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:46:23.370Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:46:38.116Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:46:50.232Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:47:03.667Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:47:09.437Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:47:15.396Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:47:46.397Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:56:05.770Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:56:45.472Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:56:57.267Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:57:13.574Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:57:22.565Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:57:27.232Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:57:33.600Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:57:44.145Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T08:58:06.788Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:08:50.986Z",
+      "feature": "Visca",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:09:02.668Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:09:18.642Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:09:26.462Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:09:32.715Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:09:44.833Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:14:25.359Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:14:39.550Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:17:16.586Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-04T09:22:54.966Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:01:25.454Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:01:40.482Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:02:10.012Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:02:26.473Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:02:42.422Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:03:03.076Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:03:08.188Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:03:30.150Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:03:44.932Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:03:50.855Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:04:03.447Z",
+      "feature": "Pelco",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:04:23.439Z",
+      "feature": "Pelco",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:04:57.867Z",
+      "feature": "Services",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:05:17.591Z",
+      "feature": "Core",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:05:29.089Z",
+      "feature": "UI",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:16:32.702Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:16:38.365Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:36:48.118Z",
+      "feature": "Transports",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-06T02:37:47.014Z",
+      "feature": "Transports",
       "phase": "do",
       "action": "updated"
     }

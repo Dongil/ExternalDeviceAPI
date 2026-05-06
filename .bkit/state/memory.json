@@ -1,8 +1,71 @@
 {
-  "sessionCount": 4,
+  "sessionCount": 6,
   "lastSession": {
-    "startedAt": "2026-04-30T00:37:21.859Z",
+    "startedAt": "2026-05-04T05:21:51.120Z",
     "platform": "claude",
     "level": "Starter"
-  }
+  },
+  "currentFeature": null,
+  "phase": "idle",
+  "archived": {
+    "camera-remote-control": {
+      "phase": "archived",
+      "matchRate": 97,
+      "iterationCount": 5,
+      "startedAt": "2026-05-04",
+      "completedAt": "2026-05-06",
+      "archivedAt": "2026-05-06",
+      "archivedTo": "docs/archive/2026-05/camera-remote-control/",
+      "rounds": 2,
+      "modelsSupported": ["EVI-H100", "SRG-300H", "FR-H50SN"],
+      "transportsSupported": ["Serial", "UdpVisca", "TcpVisca"],
+      "newProjects": ["Xeno.Framework.Camera", "CameraController"],
+      "fileCount": 28,
+      "criticalGaps": 0,
+      "buildStatus": "0 warnings 0 errors (Debug+Release)",
+      "fieldValidated": "EVI-H100 RS-232, FR-H50SN TCP",
+      "openItems": ["O1 OSD bytes", "O2 PresetCount", "O3 TiltSpeedMax", "O4 RS-485", "O5 vendor port doc", "O6 SRG-300H field test", "M1 ctor DesignMode guard"]
+    },
+    "pelco-d-and-udp-fix": {
+      "phase": "archived",
+      "matchRate": 99,
+      "iterationCount": 1,
+      "startedAt": "2026-05-06",
+      "completedAt": "2026-05-06",
+      "archivedAt": "2026-05-06",
+      "archivedTo": "docs/archive/2026-05/pelco-d-and-udp-fix/",
+      "rounds": 1,
+      "modelsAdded": ["Canon CR-N300", "Pelco-D Generic"],
+      "modelsSupportedCumulative": ["EVI-H100", "SRG-300H", "FR-H50SN", "CR-N300", "Pelco-D Generic"],
+      "protocolsSupportedCumulative": ["Sony VISCA", "Pelco-D"],
+      "transportsSupportedCumulative": ["Serial", "UdpVisca", "TcpVisca", "UDP-Raw"],
+      "newFiles": 5,
+      "modifiedFiles": 6,
+      "criticalGaps": 0,
+      "buildStatus": "0 warnings 0 errors (Debug+Release)",
+      "fieldValidated": "Canon CR-N300 UDP, FR-H50SN UDP+TCP, Pelco-D RS-232, 3-camera × 3-protocol × 3-transport simultaneous",
+      "keyDiscovery": "ViscaUdpHub singleton — all VISCA-IP firmwares route reply to dest port 52381 of source IP, requiring shared local 52381 socket with source-IP demux for multi-camera",
+      "openItems": ["OD1 Pelco-D UDP port 4001 (decided)", "OD2 PresetCount=64 estimated", "OD3 Pelco-D TCP framing variants", "OD4 UI Address placeholder", "OD5 multi-Canon hub demux", "OD6 hub fallback warning"]
+    }
+  },
+  "history": [
+    { "feature": "camera-remote-control", "phase": "plan",       "at": "2026-05-04" },
+    { "feature": "camera-remote-control", "phase": "design",     "at": "2026-05-04" },
+    { "feature": "camera-remote-control", "phase": "do",         "at": "2026-05-04" },
+    { "feature": "camera-remote-control", "phase": "check",      "at": "2026-05-04", "matchRate": 97, "round": 1 },
+    { "feature": "camera-remote-control", "phase": "act",        "at": "2026-05-04", "note": "Act-1: UDP RX-loop+queue, Act-2: MouseLeave hold-flag guard" },
+    { "feature": "camera-remote-control", "phase": "act",        "at": "2026-05-06", "note": "Act-3: TCP + FR-H50SN, Act-4: log toolbar + drain classifier, Act-5: late-Completion auto-skip" },
+    { "feature": "camera-remote-control", "phase": "check",      "at": "2026-05-06", "matchRate": 97, "round": 2 },
+    { "feature": "camera-remote-control", "phase": "design-v1.1","at": "2026-05-06", "note": "단방향 흡수 9건" },
+    { "feature": "camera-remote-control", "phase": "report",     "at": "2026-05-06" },
+    { "feature": "camera-remote-control", "phase": "archived",   "at": "2026-05-06", "to": "docs/archive/2026-05/camera-remote-control/" },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "plan",       "at": "2026-05-06" },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "design",     "at": "2026-05-06" },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "do",         "at": "2026-05-06", "note": "Step 1-7 (UDP fix → CR-N300 → Pelco-D codec → Service → Factory → UI → csproj → build)" },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "act",        "at": "2026-05-06", "note": "D1-D4: ephemeral fallback fail → 52381 explicit bind → ViscaUdpHub singleton for multi-camera" },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "check",      "at": "2026-05-06", "matchRate": 99, "round": 1 },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "design-v1.1","at": "2026-05-06", "note": "단방향 흡수 4건 (A1 ViscaUdpHub + 3 minor)" },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "report",     "at": "2026-05-06" },
+    { "feature": "pelco-d-and-udp-fix",   "phase": "archived",   "at": "2026-05-06", "to": "docs/archive/2026-05/pelco-d-and-udp-fix/" }
+  ]
 }
