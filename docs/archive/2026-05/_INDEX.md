@@ -142,4 +142,49 @@
 
 ---
 
-*마지막 갱신: 2026-05-06 (device-emulator 추가)*
+## device-emulator-validation
+
+> device-emulator 후속 미니 사이클 — third-party 컨트롤러의 VISCA-IP **wrap-level 버그** (seq regression/duplicate, length mismatch 등) 을 emulator 가 능동적으로 surface 하도록 라이브러리 헬퍼 `ViscaIpWrapValidator` 추가
+
+| 항목 | 내용 |
+|------|------|
+| **기능명** | device-emulator-validation |
+| **트리거** | 사용자 별도 테스트 — third-party 프로그램의 CR-N300 Preset 명령이 실 카메라에서 동작 안 함. emulator 로그 분석으로 seq=28→20 역행 발견 (raw byte 수동 추적 필요) |
+| **시작 / 완료 / 보관** | 2026-05-06 (Plan) → 2026-05-08 (Design) → 2026-05-09 (Do/Check/Report/Archive) |
+| **PDCA 라운드** | 1 (Match Rate 99% 단발 통과) |
+| **매칭율** | **99%** (0 critical/major/minor functional gap, 3 cosmetic 개선) |
+| **신규 파일** | 1 (`ViscaIpWrapValidator.cs` ~110 LoC) |
+| **수정 파일** | 2 (`ViscaIpEmulator.cs` +12 LoC, `Xeno.Framework.Camera.csproj` +1 line) |
+| **검증 룰 (7종)** | MALFORMED, UNKNOWN_TYPE, LENGTH_MISMATCH, INVALID_VISCA_HEADER, MISSING_VISCA_TERMINATOR, SEQ_REGRESSION, SEQ_DUPLICATE |
+| **상태 추적** | per-source-IP `Dictionary<IPAddress, uint>`, single lock, Stop 시 reset |
+| **Critical/Major Gap** | 0 |
+| **빌드** | DeviceEmulator.sln + PN8080Controller.sln Release 양쪽 0 경고 0 오류 |
+| **회귀** | 0 (기존 4 통합 시나리오 동작 무변경 — observer 패턴) |
+
+### 보관 문서
+
+| 단계 | 파일 | 분량 |
+|------|------|-----|
+| Plan | [`device-emulator-validation/01-plan.md`](device-emulator-validation/01-plan.md) | ~140 라인 |
+| Design v1.0 | [`device-emulator-validation/02-design.md`](device-emulator-validation/02-design.md) | ~330 라인 |
+| Analysis | [`device-emulator-validation/03-analysis.md`](device-emulator-validation/03-analysis.md) | ~140 라인 |
+| Report | [`device-emulator-validation/04-report.md`](device-emulator-validation/04-report.md) | ~200 라인 |
+
+### 핵심 진화 요약
+
+1. **Library helper 패턴**: validator 가 `Xeno.Framework.Camera/Protocols/Visca/` 에 위치하여 v2 매트릭스/CCU emulator 재사용 가능. emulator-specific 위치 거부 결정
+2. **Observer 패턴**: validator 는 부수효과 없이 로그만 표시 — emulator reply 동작 무변경. 회귀 risk 0
+3. **Per-source IP 격리**: 같은 controller 가 다른 ephemeral source port 사용해도 동일 seq 흐름 추적 (port 무시)
+4. **Cosmetic 개선 3건** (design 보다 cleaner): emoji → `[WARN]`/`[INFO]` ASCII (Windows console 안전), em-dash → hyphen, unused `using System;` 제거
+5. **Real-world bug 즉시 진단**: 사용자 시나리오 (seq 28→20) 가 한 줄 로그 `[WARN] SEQ_REGRESSION: last=28, got=20 (controller reset sequence?)` 로 즉시 노출
+
+### 후속 작업 (open items, v2 검토)
+
+- OD1 — per-source state TTL (장기 실행 시 inactive IP 정리)
+- OD2 — Validator 결과 export (JSON/CSV — 제3자 분석 도구 연동)
+- OD3 — inner 다중 VISCA frame 패킷 (vendor 확장)
+- OD4 — TCP raw 모드 frame-level 검증 (별도 사이클)
+
+---
+
+*마지막 갱신: 2026-05-09 (device-emulator-validation 추가)*

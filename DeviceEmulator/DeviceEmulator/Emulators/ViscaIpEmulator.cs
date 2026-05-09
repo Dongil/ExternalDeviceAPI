@@ -15,6 +15,7 @@ namespace DeviceEmulator.Emulators
     {
         private UdpServerTransport _udp;
         private TcpServerTransport _tcp;
+        private readonly ViscaIpWrapValidator _validator = new ViscaIpWrapValidator();
 
         public ViscaIpEmulator(string brand, string model)
         {
@@ -66,10 +67,19 @@ namespace DeviceEmulator.Emulators
             try { if (_udp != null) _udp.Dispose(); } catch { }
             try { if (_tcp != null) _tcp.Dispose(); } catch { }
             _udp = null; _tcp = null;
+            _validator.Reset();
         }
 
         private async void OnViscaIp(byte[] data, IPEndPoint src, bool isTcp)
         {
+            // VISCA-over-IP wrap-level validation (UDP only — TCP raw has no wrap).
+            // Surfaces controller bugs like seq regression/duplicate, length mismatch, etc.
+            if (!isTcp && src != null)
+            {
+                var issues = _validator.ValidateWrap(data, src.Address);
+                foreach (var issue in issues) Log(issue.Format());
+            }
+
             byte[] inner;
             uint seq = 0;
             bool wrapped = false;

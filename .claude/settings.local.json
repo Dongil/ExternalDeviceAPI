@@ -10,7 +10,10 @@
       "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/p:Configuration=Release\" \"/v:minimal\" \"/nologo\")",
       "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/t:Rebuild\" \"/p:Configuration=Release\" \"/v:minimal\" \"/nologo\")",
       "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"Xeno.Framework.Matrix/Xeno.Framework.Matrix.csproj\" \"/t:Rebuild\" \"/p:Configuration=Debug\" \"/v:minimal\" \"/nologo\")",
-      "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/t:Rebuild\" \"/p:Configuration=Debug\" \"/v:minimal\" \"/nologo\")"
+      "Bash(MSYS2_ARG_CONV_EXCL='*' \"/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/MSBuild.exe\" \"PN8080Controller.sln\" \"/t:Rebuild\" \"/p:Configuration=Debug\" \"/v:minimal\" \"/nologo\")",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Professional\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Code\\\\git\\\\PN-8080 Controller\\\\DeviceEmulator\\\\DeviceEmulator.sln\" /p:Configuration=Release /v:minimal /nologo /t:Restore,Build)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Professional\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Code\\\\git\\\\PN-8080 Controller\\\\PN8080Controller.sln\" /p:Configuration=Release /v:minimal /nologo)",
+      "Bash(git *)"
     ]
   },
   "enabledPlugins": {

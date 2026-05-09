@@ -1,7 +1,7 @@
 {
-  "sessionCount": 7,
+  "sessionCount": 9,
   "lastSession": {
-    "startedAt": "2026-05-06T05:22:38.346Z",
+    "startedAt": "2026-05-06T07:02:20.951Z",
     "platform": "claude",
     "level": "Starter"
   },
@@ -43,6 +43,45 @@
         "O5 vendor port doc",
         "O6 SRG-300H field test",
         "M1 ctor DesignMode guard"
+      ]
+    },
+    "device-emulator-validation": {
+      "phase": "archived",
+      "matchRate": 99,
+      "iterationCount": 1,
+      "startedAt": "2026-05-06",
+      "completedAt": "2026-05-09",
+      "archivedAt": "2026-05-09",
+      "archivedTo": "docs/archive/2026-05/device-emulator-validation/",
+      "rounds": 1,
+      "type": "mini-cycle",
+      "parent": "device-emulator",
+      "trigger": "third-party controller seq regression (28->20) on real CR-N300 Preset commands",
+      "newFiles": 1,
+      "modifiedFiles": 2,
+      "linesOfCode": 122,
+      "validationRules": [
+        "MALFORMED",
+        "UNKNOWN_TYPE",
+        "LENGTH_MISMATCH",
+        "INVALID_VISCA_HEADER",
+        "MISSING_VISCA_TERMINATOR",
+        "SEQ_REGRESSION",
+        "SEQ_DUPLICATE"
+      ],
+      "criticalGaps": 0,
+      "buildStatus": "0 warnings 0 errors (Release, both solutions)",
+      "regression": "0 (observer pattern - emulator reply behavior unchanged)",
+      "cosmeticImprovements": [
+        "C1 emoji to ASCII [WARN]/[INFO] (Windows console safety)",
+        "C2 em-dash to hyphen (ASCII consistency)",
+        "C3 removed unused using System;"
+      ],
+      "openItems": [
+        "OD1 per-source TTL",
+        "OD2 validator export JSON/CSV",
+        "OD3 multi-frame inner VISCA",
+        "OD4 TCP raw frame-level validation"
       ]
     },
     "device-emulator": {
@@ -273,6 +312,43 @@
       "phase": "archived",
       "at": "2026-05-06",
       "to": "docs/archive/2026-05/device-emulator/"
+    },
+    {
+      "feature": "device-emulator-validation",
+      "phase": "plan",
+      "at": "2026-05-06",
+      "note": "Trigger: third-party controller seq regression (28→20) found via emulator log analysis. Goal: ViscaIpWrapValidator library helper + ViscaIpEmulator integration."
+    },
+    {
+      "feature": "device-emulator-validation",
+      "phase": "design",
+      "at": "2026-05-08",
+      "note": "Q1-Q5 defaults adopted. ViscaIpWrapValidator API + ViscaIpEmulator integration spec. ~100 LoC, ~0.9h Do estimate."
+    },
+    {
+      "feature": "device-emulator-validation",
+      "phase": "do",
+      "at": "2026-05-09",
+      "note": "Step 1-4: ViscaIpWrapValidator.cs (~110 LoC) + csproj 1 line + ViscaIpEmulator integration (3 spots). Both solutions Release 0/0."
+    },
+    {
+      "feature": "device-emulator-validation",
+      "phase": "check",
+      "at": "2026-05-09",
+      "matchRate": 99,
+      "round": 1,
+      "note": "Match 99% — 0 critical/major/minor functional gap. 3 cosmetic deviations (emoji→ASCII, em-dash→hyphen, removed unused using) are intended improvements over design."
+    },
+    {
+      "feature": "device-emulator-validation",
+      "phase": "report",
+      "at": "2026-05-09"
+    },
+    {
+      "feature": "device-emulator-validation",
+      "phase": "archived",
+      "at": "2026-05-09",
+      "to": "docs/archive/2026-05/device-emulator-validation/"
     }
   ]
 }

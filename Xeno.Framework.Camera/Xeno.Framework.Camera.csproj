@@ -60,6 +60,7 @@
     <Compile Include="Protocols\Visca\ViscaCommand.cs" />
     <Compile Include="Protocols\Visca\ViscaCommandParser.cs" />
     <Compile Include="Protocols\Visca\ViscaConstants.cs" />
+    <Compile Include="Protocols\Visca\ViscaIpWrapValidator.cs" />
     <Compile Include="Protocols\Visca\ViscaReplyBuilder.cs" />
     <Compile Include="Protocols\Visca\ViscaResponseParser.cs" />
     <Compile Include="Services\EviH100CameraService.cs" />
